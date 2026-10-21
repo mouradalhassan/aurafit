@@ -1,0 +1,25 @@
+.card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-normal);
+}
+
+.card-elevated {
+  background-color: var(--bg-surface-elevated);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.card-glass {
+  background: rgba(21, 26, 34, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover.interactive {
+  transform: translateY(-2px);
+  border-color: var(--border-highlight);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}

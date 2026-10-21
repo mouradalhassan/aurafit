@@ -1,0 +1,141 @@
+.workouts-container {
+  padding: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.calendar-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none;
+}
+
+.calendar-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  min-width: 50px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-fast);
+}
+
+.calendar-day.active {
+  background: rgba(0, 230, 118, 0.1);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.day-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.day-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.workout-dot { background-color: var(--primary); }
+.rest-dot { background-color: var(--text-secondary); }
+
+.rest-card {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-secondary);
+  background: var(--bg-surface-elevated);
+}
+
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.exercise-card {
+  padding: 1.5rem;
+}
+
+.exercise-card.completed {
+  opacity: 0.7;
+}
+
+.exercise-header {
+  margin-bottom: 1rem;
+}
+
+.toggle-btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+.equipment-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-full);
+  margin-top: 0.25rem;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.exercise-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  margin-left: 2.5rem;
+}
+
+.sets-reps {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.video-btn {
+  width: auto;
+  align-self: flex-start;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.gif-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  background: var(--bg-surface);
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border-color);
+}
+
+.technique-gif {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
